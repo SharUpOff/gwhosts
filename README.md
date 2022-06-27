@@ -1,7 +1,7 @@
 # gwhosts
 Route the list of hosts through the specified gateway (e.g. VPN).
 
-Run it manually, using `cron`, or any other way.
+🚀 Run it manually, using `cron`, or any other way.
 
 ## How does this script work
 1. Resolves IP addresses for hosts specified in a file;
@@ -11,7 +11,7 @@ Run it manually, using `cron`, or any other way.
 ## Installation
 
 ### LT-Version (RECOMMENDED)
-The lt-version has no external python dependencies and does not use `argparse`.
+✅ The lt-version has no external python dependencies and does not use `argparse`.
 So it starts up to 10x faster on slow devices like OpenWRT routers.
 ```bash
 curl https://raw.githubusercontent.com/SharUpOff/gwhosts/main/dist/gwhostslt.py -so - | sudo tee /usr/local/bin/gwhostslt > /dev/null
@@ -21,7 +21,7 @@ sudo chmod 755 /usr/local/bin/gwhostslt
 ```
 
 ### PR2-Version (SLOW)
-The pr2-version uses `pyroute2` (if installed) and `argparse`.
+⚠️ The pr2-version uses `pyroute2` (if installed) and `argparse`.
 So it starts up to 10x slower on slow devices like OpenWRT routers.
 ```bash
 curl https://raw.githubusercontent.com/SharUpOff/gwhosts/main/dist/gwhosts.py -so - | sudo tee /usr/local/bin/gwhosts > /dev/null
