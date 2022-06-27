@@ -3,7 +3,7 @@ Route the list of hosts through the specified gateway (e.g. VPN).
 
 Run it manually, using `cron`, or any other way.
 
-## How this script works
+## How does this script work
 1. Resolves IP addresses for hosts specified in a file;
 2. Combines similar addresses into subnets;
 3. Adds resulting subnets into static routes via specified gateway.
