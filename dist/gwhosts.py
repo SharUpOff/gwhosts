@@ -132,6 +132,7 @@ def hostnames2addresses(hostnames):
             cname, aliases, ip_list = gethostbyname_ex(name)
 
         except Exception as e:
+            logger.error('Unable to resolve hostname "%s".', name)
             logger.exception(e)
 
         else:
